@@ -54,7 +54,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="7Gx-lG-VEj" kind="show" id="TWB-Ai-IYD"/>
+                                            <segue destination="KcQ-ok-tSy" kind="show" id="odc-R6-tnW"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="113" id="PQH-2C-mso">
@@ -113,12 +113,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QB7-Jz-xfY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2854" y="-895"/>
+            <point key="canvasLocation" x="2853.5999999999999" y="-895.56650246305423"/>
         </scene>
-        <!--View Controller-->
+        <!--Ink View Controller-->
         <scene sceneID="eh9-ox-oCb">
             <objects>
-                <viewController id="OYZ-0a-b1s" sceneMemberID="viewController">
+                <viewController id="OYZ-0a-b1s" customClass="LInkViewController" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="phL-7Y-vx2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,6 +127,14 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wa-e9-Nxp">
+                                <rect key="frame" x="157" y="88" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="來這裡更詳細唷～" image="放大鏡icon"/>
+                                <connections>
+                                    <action selector="Coffee2:" destination="OYZ-0a-b1s" eventType="touchUpInside" id="P6j-qM-vdJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="OK8-P9-fjQ"/>
@@ -134,139 +142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpt-s0-ovX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4684" y="-896"/>
-        </scene>
-        <!--Table View Controller-->
-        <scene sceneID="Lcl-mR-cFV">
-            <objects>
-                <tableViewController id="7Gx-lG-VEj" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="FCT-PS-ZjL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <sections>
-                            <tableViewSection id="Wdq-kv-Bgf">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="mAb-Aj-pDV">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mAb-Aj-pDV" id="v6n-Hd-LN4">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="123.66666666666667"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="VRK-3D-q6T">
-                                                    <rect key="frame" x="25" y="3" width="137" height="116"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="Inm-t4-fu1">
-                                                    <rect key="frame" x="215" y="3" width="137" height="116"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="yjH-wq-9FL">
-                                        <rect key="frame" x="0.0" y="124" width="375" height="124"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yjH-wq-9FL" id="kxX-aD-Cgb">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="123.66666666666667"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="5k7-ZW-FmA">
-                                                    <rect key="frame" x="25" y="3" width="137" height="116"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="Kqz-rE-y52">
-                                                    <rect key="frame" x="215" y="3" width="137" height="116"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="kj6-ik-ehK">
-                                        <rect key="frame" x="0.0" y="248" width="375" height="124"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kj6-ik-ehK" id="UWH-0p-TCM">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="123.66666666666667"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="RJq-aM-heT">
-                                                    <rect key="frame" x="25" y="3" width="137" height="116"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="ZIY-ug-M5F">
-                                                    <rect key="frame" x="215" y="3" width="137" height="116"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="C0f-kS-aID">
-                                        <rect key="frame" x="0.0" y="372" width="375" height="124"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C0f-kS-aID" id="bpC-dN-K0D">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="123.66666666666667"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="9" translatesAutoresizingMaskIntoConstraints="NO" id="Drg-A0-aRX">
-                                                    <rect key="frame" x="25" y="3" width="137" height="116"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="8" translatesAutoresizingMaskIntoConstraints="NO" id="P9J-Yb-qvg">
-                                                    <rect key="frame" x="215" y="3" width="137" height="116"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="91t-Hc-FCs">
-                                        <rect key="frame" x="0.0" y="496" width="375" height="124"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="91t-Hc-FCs" id="5z6-YQ-MsT">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="123.66666666666667"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="7" translatesAutoresizingMaskIntoConstraints="NO" id="Bdq-tj-1LL">
-                                                    <rect key="frame" x="25" y="3" width="137" height="116"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="4lJ-ck-n3p">
-                                                    <rect key="frame" x="215" y="3" width="137" height="116"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="KeL-XN-8Gt">
-                                        <rect key="frame" x="0.0" y="620" width="375" height="124"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KeL-XN-8Gt" id="Skb-Eg-ghm">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="123.66666666666667"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="11" translatesAutoresizingMaskIntoConstraints="NO" id="Slv-uJ-R6c">
-                                                    <rect key="frame" x="25" y="3" width="137" height="116"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="12" translatesAutoresizingMaskIntoConstraints="NO" id="EUL-Zk-MCl">
-                                                    <rect key="frame" x="215" y="3" width="137" height="116"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="7Gx-lG-VEj" id="ekq-2p-2Rt"/>
-                            <outlet property="delegate" destination="7Gx-lG-VEj" id="5D4-5R-Gwb"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zaA-Vr-v8a" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3903" y="-896"/>
+            <point key="canvasLocation" x="4648.8000000000002" y="-896.30541871921184"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JVS-VD-xsT">
@@ -388,10 +264,10 @@
             </objects>
             <point key="canvasLocation" x="772" y="-345"/>
         </scene>
-        <!--View Controller-->
+        <!--Ink View Controller-->
         <scene sceneID="pE6-wz-yEd">
             <objects>
-                <viewController id="wSB-FL-ODj" sceneMemberID="viewController">
+                <viewController id="wSB-FL-ODj" customClass="LInkViewController" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xKz-76-nMF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -400,6 +276,15 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXI-Uu-pz2">
+                                <rect key="frame" x="157" y="88" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="來這裡更詳細唷～" image="放大鏡icon"/>
+                                <connections>
+                                    <action selector="Coffee2:" destination="OYZ-0a-b1s" eventType="touchUpInside" id="oY3-BV-vd7"/>
+                                    <action selector="Coffee3:" destination="wSB-FL-ODj" eventType="touchUpInside" id="eso-5M-0Og"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="ksY-2F-LfN"/>
@@ -407,7 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="71a-Af-TbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5420" y="-896"/>
+            <point key="canvasLocation" x="5420" y="-896.30541871921184"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="BMN-0S-baB">
@@ -515,10 +400,10 @@
             </objects>
             <point key="canvasLocation" x="2854" y="0.0"/>
         </scene>
-        <!--View Controller-->
+        <!--Ink View Controller-->
         <scene sceneID="OzW-kK-TNF">
             <objects>
-                <viewController id="1Zv-2P-7ll" sceneMemberID="viewController">
+                <viewController id="1Zv-2P-7ll" customClass="LInkViewController" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q02-3j-C1P">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -527,6 +412,16 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvE-OY-Jqn">
+                                <rect key="frame" x="157" y="88" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="來這裡更詳細唷～" image="放大鏡icon"/>
+                                <connections>
+                                    <action selector="CatHundred2:" destination="1Zv-2P-7ll" eventType="touchUpInside" id="OJE-GD-a7Q"/>
+                                    <action selector="Coffee1:" destination="KcQ-ok-tSy" eventType="touchUpInside" id="Oov-L6-Ijm"/>
+                                    <action selector="Coffee2:" destination="OYZ-0a-b1s" eventType="touchUpInside" id="goi-86-Uwx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Xoo-4y-Fak"/>
@@ -534,12 +429,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dN3-wm-Isp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2854" y="751"/>
+            <point key="canvasLocation" x="2853.5999999999999" y="750.73891625615772"/>
         </scene>
-        <!--View Controller-->
+        <!--Ink View Controller-->
         <scene sceneID="UEe-bB-KGp">
             <objects>
-                <viewController id="0tC-Sy-eQs" sceneMemberID="viewController">
+                <viewController id="0tC-Sy-eQs" customClass="LInkViewController" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jmZ-Gf-Tqi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -548,6 +443,16 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJf-8T-hX0">
+                                <rect key="frame" x="157" y="88" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="來這裡更詳細唷～" image="放大鏡icon"/>
+                                <connections>
+                                    <action selector="CatHundred1:" destination="0tC-Sy-eQs" eventType="touchUpInside" id="lQZ-gc-BFL"/>
+                                    <action selector="Coffee1:" destination="KcQ-ok-tSy" eventType="touchUpInside" id="2yk-Up-Vsd"/>
+                                    <action selector="Coffee2:" destination="OYZ-0a-b1s" eventType="touchUpInside" id="3d4-ht-rHj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Pah-K1-JEE"/>
@@ -555,12 +460,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iEU-wb-4Ib" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2207" y="752"/>
+            <point key="canvasLocation" x="2205.5999999999999" y="751.47783251231533"/>
         </scene>
-        <!--View Controller-->
+        <!--Ink View Controller-->
         <scene sceneID="azR-5h-xsB">
             <objects>
-                <viewController id="f2B-YX-loW" sceneMemberID="viewController">
+                <viewController id="f2B-YX-loW" customClass="LInkViewController" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="41G-CI-GHD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -569,6 +474,16 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qen-bq-NGi">
+                                <rect key="frame" x="157" y="88" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="來這裡更詳細唷～" image="放大鏡icon"/>
+                                <connections>
+                                    <action selector="CatHundred3:" destination="f2B-YX-loW" eventType="touchUpInside" id="fhf-p9-JE5"/>
+                                    <action selector="Coffee1:" destination="KcQ-ok-tSy" eventType="touchUpInside" id="PDE-VI-MX3"/>
+                                    <action selector="Coffee2:" destination="OYZ-0a-b1s" eventType="touchUpInside" id="pWG-3D-zud"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="kPx-bv-yFJ"/>
@@ -576,7 +491,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zzq-yI-kqD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3498" y="751"/>
+            <point key="canvasLocation" x="3496.8000000000002" y="750.73891625615772"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="I2e-w3-hXg">
@@ -684,10 +599,10 @@
             </objects>
             <point key="canvasLocation" x="534" y="638"/>
         </scene>
-        <!--View Controller-->
+        <!--Ink View Controller-->
         <scene sceneID="rwI-my-orE">
             <objects>
-                <viewController id="fxX-HG-swG" sceneMemberID="viewController">
+                <viewController id="fxX-HG-swG" customClass="LInkViewController" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uyY-97-qCm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -696,6 +611,17 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ej-0q-BUA">
+                                <rect key="frame" x="157" y="88" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="來這裡更詳細唷～" image="放大鏡icon"/>
+                                <connections>
+                                    <action selector="CatExcitement2:" destination="fxX-HG-swG" eventType="touchUpInside" id="Gb0-Wd-lUc"/>
+                                    <action selector="CatHundred1:" destination="0tC-Sy-eQs" eventType="touchUpInside" id="OST-4h-vlO"/>
+                                    <action selector="Coffee1:" destination="KcQ-ok-tSy" eventType="touchUpInside" id="Udh-Cw-OIY"/>
+                                    <action selector="Coffee2:" destination="OYZ-0a-b1s" eventType="touchUpInside" id="aUi-sr-DSC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="4on-sH-kSw"/>
@@ -703,12 +629,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PNS-zJ-4qc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34" y="1379"/>
+            <point key="canvasLocation" x="32.799999999999997" y="1378.8177339901479"/>
         </scene>
-        <!--View Controller-->
+        <!--Ink View Controller-->
         <scene sceneID="iZI-np-1bG">
             <objects>
-                <viewController id="UaD-Ee-iaa" sceneMemberID="viewController">
+                <viewController id="UaD-Ee-iaa" customClass="LInkViewController" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="11C-BR-eXq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -717,6 +643,17 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mb2-vv-yta">
+                                <rect key="frame" x="157" y="88" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="來這裡更詳細唷～" image="放大鏡icon"/>
+                                <connections>
+                                    <action selector="CatExcitement1:" destination="UaD-Ee-iaa" eventType="touchUpInside" id="hgR-Xl-e2E"/>
+                                    <action selector="CatHundred1:" destination="0tC-Sy-eQs" eventType="touchUpInside" id="Qtq-jR-TXu"/>
+                                    <action selector="Coffee1:" destination="KcQ-ok-tSy" eventType="touchUpInside" id="Pyy-pv-6eu"/>
+                                    <action selector="Coffee2:" destination="OYZ-0a-b1s" eventType="touchUpInside" id="iyM-dJ-aUf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="nXc-c3-zDb"/>
@@ -724,12 +661,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sVZ-CW-EBm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-646" y="1379"/>
+            <point key="canvasLocation" x="-647.20000000000005" y="1378.8177339901479"/>
         </scene>
-        <!--View Controller-->
+        <!--Ink View Controller-->
         <scene sceneID="Hh7-54-LA6">
             <objects>
-                <viewController id="cfh-iO-mnv" sceneMemberID="viewController">
+                <viewController id="cfh-iO-mnv" customClass="LInkViewController" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m91-EO-IHu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -738,6 +675,17 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnA-UJ-fkU">
+                                <rect key="frame" x="157" y="88" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="來這裡更詳細唷～" image="放大鏡icon"/>
+                                <connections>
+                                    <action selector="CatExcitement3:" destination="cfh-iO-mnv" eventType="touchUpInside" id="N2Z-Y2-gYe"/>
+                                    <action selector="CatHundred1:" destination="0tC-Sy-eQs" eventType="touchUpInside" id="fsr-mu-SGA"/>
+                                    <action selector="Coffee1:" destination="KcQ-ok-tSy" eventType="touchUpInside" id="qfB-tJ-Vet"/>
+                                    <action selector="Coffee2:" destination="OYZ-0a-b1s" eventType="touchUpInside" id="cVc-gW-bdm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="IJh-4x-i9V"/>
@@ -745,7 +693,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aEC-Bb-Gyg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="727" y="1379"/>
+            <point key="canvasLocation" x="725.60000000000002" y="1378.8177339901479"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="Reb-V5-Kma">
@@ -853,10 +801,10 @@
             </objects>
             <point key="canvasLocation" x="1271" y="-1151"/>
         </scene>
-        <!--View Controller-->
+        <!--Ink View Controller-->
         <scene sceneID="Rzh-vL-mel">
             <objects>
-                <viewController id="zhT-cL-Z5A" sceneMemberID="viewController">
+                <viewController id="zhT-cL-Z5A" customClass="LInkViewController" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z9l-sd-2CF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -865,6 +813,16 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUQ-VZ-zsk">
+                                <rect key="frame" x="157" y="88" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="來這裡更詳細唷～" image="放大鏡icon"/>
+                                <connections>
+                                    <action selector="Coffee1:" destination="KcQ-ok-tSy" eventType="touchUpInside" id="7Wk-Ld-9FZ"/>
+                                    <action selector="Coffee2:" destination="OYZ-0a-b1s" eventType="touchUpInside" id="P7m-Uh-KyP"/>
+                                    <action selector="FoolCat2:" destination="zhT-cL-Z5A" eventType="touchUpInside" id="F8I-pu-6Ew"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="vfs-1b-lvY"/>
@@ -872,12 +830,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3vs-FX-Q8g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1641" y="-1934"/>
+            <point key="canvasLocation" x="1640.8" y="-1934.4827586206898"/>
         </scene>
-        <!--View Controller-->
+        <!--Ink View Controller-->
         <scene sceneID="pbu-fZ-zW2">
             <objects>
-                <viewController id="DIr-y0-NUe" sceneMemberID="viewController">
+                <viewController id="DIr-y0-NUe" customClass="LInkViewController" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3qX-0h-N1K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -886,6 +844,16 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aA-LA-gSS">
+                                <rect key="frame" x="157" y="88" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="來這裡更詳細唷～" image="放大鏡icon"/>
+                                <connections>
+                                    <action selector="Coffee1:" destination="KcQ-ok-tSy" eventType="touchUpInside" id="gX6-6l-HOA"/>
+                                    <action selector="Coffee2:" destination="OYZ-0a-b1s" eventType="touchUpInside" id="c7g-xD-b0W"/>
+                                    <action selector="FoolCat3:" destination="DIr-y0-NUe" eventType="touchUpInside" id="aBc-WV-lXf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="x5y-y0-4h2"/>
@@ -893,12 +861,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wJp-Si-JqE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2471" y="-1934"/>
+            <point key="canvasLocation" x="2469.5999999999999" y="-1934.4827586206898"/>
         </scene>
-        <!--View Controller-->
+        <!--Ink View Controller-->
         <scene sceneID="00u-Ky-Mv1">
             <objects>
-                <viewController id="Juu-sV-Ljn" sceneMemberID="viewController">
+                <viewController id="Juu-sV-Ljn" customClass="LInkViewController" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YNd-fX-xHn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -907,6 +875,16 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8g4-JS-lrc">
+                                <rect key="frame" x="157" y="88" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="來這裡更詳細唷～" image="放大鏡icon"/>
+                                <connections>
+                                    <action selector="Coffee1:" destination="KcQ-ok-tSy" eventType="touchUpInside" id="vr2-ts-7iq"/>
+                                    <action selector="Coffee2:" destination="OYZ-0a-b1s" eventType="touchUpInside" id="Hde-Cg-sw1"/>
+                                    <action selector="FoolCat1:" destination="Juu-sV-Ljn" eventType="touchUpInside" id="gb8-QU-3iq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="wj5-e4-vTy"/>
@@ -914,7 +892,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5hv-a2-RPR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="617" y="-1934"/>
+            <point key="canvasLocation" x="616.79999999999995" y="-1934.4827586206898"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="uJv-iH-QFQ">
@@ -1022,10 +1000,10 @@
             </objects>
             <point key="canvasLocation" x="-1246" y="-1151"/>
         </scene>
-        <!--View Controller-->
+        <!--Ink View Controller-->
         <scene sceneID="LJw-NV-0wj">
             <objects>
-                <viewController id="7sI-ZU-g3C" sceneMemberID="viewController">
+                <viewController id="7sI-ZU-g3C" customClass="LInkViewController" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XLY-UU-wlu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1034,6 +1012,18 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5au-iK-77s">
+                                <rect key="frame" x="157" y="88" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="來這裡更詳細唷～" image="放大鏡icon"/>
+                                <connections>
+                                    <action selector="CatCluster2:" destination="7sI-ZU-g3C" eventType="touchUpInside" id="p8g-ic-Tkv"/>
+                                    <action selector="CatExcitement1:" destination="UaD-Ee-iaa" eventType="touchUpInside" id="eun-hP-06S"/>
+                                    <action selector="CatHundred1:" destination="0tC-Sy-eQs" eventType="touchUpInside" id="lem-yY-YWy"/>
+                                    <action selector="Coffee1:" destination="KcQ-ok-tSy" eventType="touchUpInside" id="6cj-dK-2gE"/>
+                                    <action selector="Coffee2:" destination="OYZ-0a-b1s" eventType="touchUpInside" id="OSf-0f-xnl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="W6A-h0-HlI"/>
@@ -1041,12 +1031,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2BD-0M-pDR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-788" y="-1934"/>
+            <point key="canvasLocation" x="-788" y="-1934.4827586206898"/>
         </scene>
-        <!--View Controller-->
+        <!--Ink View Controller-->
         <scene sceneID="PcJ-EN-47C">
             <objects>
-                <viewController id="i55-Cs-jgm" sceneMemberID="viewController">
+                <viewController id="i55-Cs-jgm" customClass="LInkViewController" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kIy-rS-vuG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1055,6 +1045,19 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uN4-kE-egA">
+                                <rect key="frame" x="157" y="88" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="來這裡更詳細唷～" image="放大鏡icon"/>
+                                <connections>
+                                    <action selector="CatCluster3:" destination="i55-Cs-jgm" eventType="touchUpInside" id="Dei-Hj-t34"/>
+                                    <action selector="CatExcitement1:" destination="UaD-Ee-iaa" eventType="touchUpInside" id="WFb-pT-8kZ"/>
+                                    <action selector="CatExcitement3:" destination="i55-Cs-jgm" eventType="touchUpInside" id="E97-cF-RVp"/>
+                                    <action selector="CatHundred1:" destination="0tC-Sy-eQs" eventType="touchUpInside" id="C1q-Vh-PXO"/>
+                                    <action selector="Coffee1:" destination="KcQ-ok-tSy" eventType="touchUpInside" id="bbT-uC-e8Y"/>
+                                    <action selector="Coffee2:" destination="OYZ-0a-b1s" eventType="touchUpInside" id="hgX-4s-sRm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="gcO-oH-wdm"/>
@@ -1062,12 +1065,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N8S-ea-ajw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-103" y="-1934"/>
+            <point key="canvasLocation" x="-103.2" y="-1934.4827586206898"/>
         </scene>
-        <!--View Controller-->
+        <!--Ink View Controller-->
         <scene sceneID="1WP-mQ-1Uf">
             <objects>
-                <viewController id="SE4-gd-Gzp" sceneMemberID="viewController">
+                <viewController id="SE4-gd-Gzp" customClass="LInkViewController" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M0q-gq-Wl5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1076,6 +1079,18 @@
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCY-B3-uNi">
+                                <rect key="frame" x="157" y="88" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="來這裡更詳細唷～" image="放大鏡icon"/>
+                                <connections>
+                                    <action selector="CatCluster1:" destination="SE4-gd-Gzp" eventType="touchUpInside" id="PcC-RU-eF2"/>
+                                    <action selector="CatExcitement1:" destination="UaD-Ee-iaa" eventType="touchUpInside" id="WJz-xE-U3V"/>
+                                    <action selector="CatHundred1:" destination="0tC-Sy-eQs" eventType="touchUpInside" id="omY-LR-3vZ"/>
+                                    <action selector="Coffee1:" destination="KcQ-ok-tSy" eventType="touchUpInside" id="GUj-jc-4VS"/>
+                                    <action selector="Coffee2:" destination="OYZ-0a-b1s" eventType="touchUpInside" id="Iy4-wc-yst"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="GGi-dB-UYD"/>
@@ -1083,22 +1098,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hQh-1c-RZF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1503" y="-1934"/>
+            <point key="canvasLocation" x="-1503.2" y="-1934.4827586206898"/>
+        </scene>
+        <!--Ink View Controller-->
+        <scene sceneID="LQA-fh-gy3">
+            <objects>
+                <viewController id="KcQ-ok-tSy" customClass="LInkViewController" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nfQ-4e-414">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="奶泡貓 延伸" translatesAutoresizingMaskIntoConstraints="NO" id="G2O-KC-jAf">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0h-Ka-0e8">
+                                <rect key="frame" x="157" y="88" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="來這裡更詳細唷～" image="放大鏡icon"/>
+                                <connections>
+                                    <action selector="Coffee1:" destination="KcQ-ok-tSy" eventType="touchUpInside" id="VKt-z6-bBa"/>
+                                    <action selector="Coffee2:" destination="OYZ-0a-b1s" eventType="touchUpInside" id="L7R-5n-KSU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="QWS-W2-BAi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BSe-9u-1v8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3781.5999999999999" y="-896.30541871921184"/>
         </scene>
     </scenes>
     <resources>
-        <image name="1" width="282" height="268"/>
-        <image name="10" width="282" height="268"/>
-        <image name="11" width="282" height="268"/>
-        <image name="12" width="282" height="268"/>
-        <image name="2" width="282" height="268"/>
-        <image name="3" width="282" height="268"/>
-        <image name="4" width="282" height="268"/>
-        <image name="5" width="282" height="268"/>
-        <image name="6" width="282" height="268"/>
-        <image name="7" width="282" height="268"/>
-        <image name="8" width="282" height="268"/>
-        <image name="9" width="282" height="268"/>
         <image name="Cat 100% 2015" width="306" height="268"/>
         <image name="Cat 100% 2015 v2" width="292" height="270"/>
         <image name="Cat 100% 2015 v2延伸" width="664" height="1300"/>
@@ -1114,9 +1147,11 @@
         <image name="反應過激的貓預設" width="278" height="225"/>
         <image name="咖波動來動去" width="268" height="244"/>
         <image name="咖波預設" width="275" height="215"/>
+        <image name="奶泡貓 延伸" width="668" height="1304"/>
         <image name="奶泡貓與咖波" width="270" height="246"/>
         <image name="對話框上的貓 去背" width="259" height="199"/>
         <image name="小愛心" width="20" height="20"/>
+        <image name="放大鏡icon" width="256" height="256"/>
         <image name="會動的！群聚在對話框上的貓" width="502" height="432"/>
         <image name="會動的！群聚在對話框上的貓 延伸" width="690" height="1300"/>
         <image name="白爛貓7" width="278" height="278"/>

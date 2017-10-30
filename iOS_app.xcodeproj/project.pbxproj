@@ -14,6 +14,7 @@
 		12254C491F74ADB300A79D7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12254C471F74ADB300A79D7F /* LaunchScreen.storyboard */; };
 		12254C541F74ADB300A79D7F /* iOS_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12254C531F74ADB300A79D7F /* iOS_appTests.swift */; };
 		12254C5F1F74ADB300A79D7F /* iOS_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12254C5E1F74ADB300A79D7F /* iOS_appUITests.swift */; };
+		124560441FA30ADB00E17685 /* YoutubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124560431FA30ADB00E17685 /* YoutubeViewController.swift */; };
 		125288FE1F99D2F900F049F8 /* LInkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125288FD1F99D2F900F049F8 /* LInkViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		12254C5A1F74ADB300A79D7F /* iOS_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12254C5E1F74ADB300A79D7F /* iOS_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_appUITests.swift; sourceTree = "<group>"; };
 		12254C601F74ADB300A79D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		124560431FA30ADB00E17685 /* YoutubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeViewController.swift; sourceTree = "<group>"; };
 		125288FD1F99D2F900F049F8 /* LInkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LInkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 				12254C451F74ADB300A79D7F /* Assets.xcassets */,
 				12254C471F74ADB300A79D7F /* LaunchScreen.storyboard */,
 				12254C4A1F74ADB300A79D7F /* Info.plist */,
+				124560431FA30ADB00E17685 /* YoutubeViewController.swift */,
 			);
 			path = iOS_app;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				125288FE1F99D2F900F049F8 /* LInkViewController.swift in Sources */,
 				12254C411F74ADB300A79D7F /* ViewController.swift in Sources */,
+				124560441FA30ADB00E17685 /* YoutubeViewController.swift in Sources */,
 				12254C3F1F74ADB300A79D7F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--咖波-->
         <scene sceneID="PAQ-hF-TLp">
             <objects>
                 <tableViewController id="wKE-5f-4a7" sceneMemberID="viewController">
@@ -109,7 +109,7 @@
                             <outlet property="delegate" destination="wKE-5f-4a7" id="ReP-Dz-OAU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Qqc-Yc-7nH"/>
+                    <navigationItem key="navigationItem" title="咖波" id="Qqc-Yc-7nH"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QB7-Jz-xfY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -144,7 +144,7 @@
             </objects>
             <point key="canvasLocation" x="4648.8000000000002" y="-896.30541871921184"/>
         </scene>
-        <!--View Controller-->
+        <!--主畫面-->
         <scene sceneID="JVS-VD-xsT">
             <objects>
                 <viewController id="6S2-zF-rtC" customClass="ViewController" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
@@ -236,15 +236,103 @@
                                     <action selector="showMessage" destination="6S2-zF-rtC" eventType="touchUpInside" id="uam-Nt-w5S"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eZ-Aq-blG">
+                                <rect key="frame" x="20" y="562" width="108" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="line icon"/>
+                                <connections>
+                                    <segue destination="joR-km-OdH" kind="show" id="ZT1-OT-plM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WSE-fG-T21"/>
                     </view>
-                    <navigationItem key="navigationItem" id="TKj-mS-a0N"/>
+                    <navigationItem key="navigationItem" title="主畫面" id="TKj-mS-a0N"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4NB-9A-uZB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1572" y="-345.07389162561577"/>
+        </scene>
+        <!--youtube-->
+        <scene sceneID="GU9-2k-zR1">
+            <objects>
+                <viewController id="nla-hp-2a1" customClass="YoutubeViewController" customModule="iOS_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IfR-Lq-sGe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PNh-qF-BAX">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="veo-3f-dkx"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="youtube" id="5mV-HA-aF5"/>
+                    <connections>
+                        <outlet property="customWebView" destination="PNh-qF-BAX" id="Cac-g3-J72"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vaI-9G-Zn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1071.2" y="586.69950738916259"/>
+        </scene>
+        <!--歷史-->
+        <scene sceneID="RJD-yh-4mb">
+            <objects>
+                <viewController id="aGs-QK-aAT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C6F-Hh-cU4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line背景" translatesAutoresizingMaskIntoConstraints="NO" id="Eq7-0n-P4c">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line icon" translatesAutoresizingMaskIntoConstraints="NO" id="Ylu-JE-CXe">
+                                <rect key="frame" x="91" y="107" width="193" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPC-BL-bjA">
+                                <rect key="frame" x="8" y="300" width="359" height="380"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">2011年6月，由於作者李海珍，因地震而無法即時聯絡家人的想法，而在日本推出了LINE即時通訊軟體[8]
+2012年2月，首次於臺灣地區推出，並以桂綸鎂為代言人。[9][10][11][12][13]。同年3月，推出Windows及Macintosh版本[14][15]，12月，發布了名為「LINE」的中文版本，並首次於中國大陸推出。[16]
+2013年4月1日，NHN Japan公司更名為「LINE株式会社」，隨著韓國母公司NHN併入Naver Corporation，成為Naver Corporation旗下的子公司。5月16日，成立臺灣分公司「韓商連加股份有限公司」（LINE Taiwan，後以臺灣連線股份有限公司取代）。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="1" green="0.8616077717036964" blue="0.25326989056386973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="O8J-Qa-aDt"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="歷史" id="7Qz-p5-jQJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DFN-4p-1RE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1071.2" y="-274.13793103448279"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="qJw-WT-3e1">
+            <objects>
+                <tabBarController id="joR-km-OdH" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jn7-68-D7Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="aGs-QK-aAT" kind="relationship" relationship="viewControllers" id="Ltv-Pj-X90"/>
+                        <segue destination="nla-hp-2a1" kind="relationship" relationship="viewControllers" id="57c-hc-g2c"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k12-5P-37q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2062" y="98"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2AU-a3-NCf">
@@ -294,7 +382,7 @@
             </objects>
             <point key="canvasLocation" x="5420" y="-896.30541871921184"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Cat 100%-->
         <scene sceneID="BMN-0S-baB">
             <objects>
                 <tableViewController id="Yhm-Yi-Xhp" sceneMemberID="viewController">
@@ -394,11 +482,11 @@
                             <outlet property="delegate" destination="Yhm-Yi-Xhp" id="DWg-cl-wz2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="76g-wX-1BU"/>
+                    <navigationItem key="navigationItem" title="Cat 100%" id="76g-wX-1BU"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YWn-D9-998" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2854" y="0.0"/>
+            <point key="canvasLocation" x="3196" y="0.0"/>
         </scene>
         <!--Ink View Controller-->
         <scene sceneID="OzW-kK-TNF">
@@ -429,7 +517,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dN3-wm-Isp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2853.5999999999999" y="750.73891625615772"/>
+            <point key="canvasLocation" x="3196" y="750.73891625615772"/>
         </scene>
         <!--Ink View Controller-->
         <scene sceneID="UEe-bB-KGp">
@@ -460,7 +548,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iEU-wb-4Ib" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2205.5999999999999" y="751.47783251231533"/>
+            <point key="canvasLocation" x="2548" y="751.47783251231533"/>
         </scene>
         <!--Ink View Controller-->
         <scene sceneID="azR-5h-xsB">
@@ -491,9 +579,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zzq-yI-kqD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3496.8000000000002" y="750.73891625615772"/>
+            <point key="canvasLocation" x="3839.1999999999998" y="750.73891625615772"/>
         </scene>
-        <!--Table View Controller-->
+        <!--激動貓-->
         <scene sceneID="I2e-w3-hXg">
             <objects>
                 <tableViewController id="7js-8h-Acd" sceneMemberID="viewController">
@@ -593,11 +681,11 @@
                             <outlet property="delegate" destination="7js-8h-Acd" id="n4Q-7X-X9H"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="RB9-tI-Q5B"/>
+                    <navigationItem key="navigationItem" title="激動貓" id="RB9-tI-Q5B"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jP8-eg-4ww" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="534" y="638"/>
+            <point key="canvasLocation" x="876" y="637.6847290640394"/>
         </scene>
         <!--Ink View Controller-->
         <scene sceneID="rwI-my-orE">
@@ -695,7 +783,7 @@
             </objects>
             <point key="canvasLocation" x="725.60000000000002" y="1378.8177339901479"/>
         </scene>
-        <!--Table View Controller-->
+        <!--白爛貓-->
         <scene sceneID="Reb-V5-Kma">
             <objects>
                 <tableViewController id="vXE-F1-Njw" sceneMemberID="viewController">
@@ -795,7 +883,7 @@
                             <outlet property="delegate" destination="vXE-F1-Njw" id="efA-8v-mmL"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Oc9-rj-ZZd"/>
+                    <navigationItem key="navigationItem" title="白爛貓" id="Oc9-rj-ZZd"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B63-Y6-cww" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -894,7 +982,7 @@
             </objects>
             <point key="canvasLocation" x="616.79999999999995" y="-1934.4827586206898"/>
         </scene>
-        <!--Table View Controller-->
+        <!--對話框的貓-->
         <scene sceneID="uJv-iH-QFQ">
             <objects>
                 <tableViewController id="MOT-jS-Nr0" sceneMemberID="viewController">
@@ -906,7 +994,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="白爛貓系列貼圖" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgm-gv-pA8">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="對話框系列貼圖" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgm-gv-pA8">
                                     <rect key="frame" x="98" y="14" width="178" height="30"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -994,7 +1082,7 @@
                             <outlet property="delegate" destination="MOT-jS-Nr0" id="6jE-9v-99x"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="3kN-IS-afp"/>
+                    <navigationItem key="navigationItem" title="對話框的貓" id="3kN-IS-afp"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gq6-tk-nA2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1139,6 +1227,8 @@
         <image name="Cat 100% 2017延伸" width="688" height="1310"/>
         <image name="Cat 100%2017" width="298" height="274"/>
         <image name="Cat100%預設" width="259" height="224"/>
+        <image name="line icon" width="350" height="350"/>
+        <image name="line背景" width="580" height="934"/>
         <image name="主圖背景" width="640" height="1136"/>
         <image name="動來動去延伸" width="658" height="1286"/>
         <image name="反應過激的貓 第七彈" width="274" height="254"/>
